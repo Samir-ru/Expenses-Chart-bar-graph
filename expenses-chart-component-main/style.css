@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+
+.noth{
+color: hsl(10, 79%, 65%);
+color: hsl(186, 34%, 60%);
+color: hsl(25, 47%, 15%);
+color: hsl(28, 10%, 53%);
+color: hsl(27, 66%, 92%);
+color: hsl(33, 100%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(27, 66%, 92%);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+}
+
+.balance{
+    background-color: hsl(10, 79%, 65%);
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;    
+}
+.balance img{
+    height: 40px;
+}
+
+.balance_text{
+    color: white;
+}
+
+.expenses{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.expenses h2{
+    color: hsl(25, 47%, 15%);
+}
+.chart{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.bar .tooltip {
+    visibility: hidden;
+    width: 130%;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    top: -35px;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  
+  .bar:hover .tooltip {
+    visibility: visible;
+  }
+
+.bar{
+    width: 12%;
+    height: 20%;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.bar:hover{
+    opacity: 70%;
+}
+
+
+.days_container{
+    display: flex;
+    justify-content: space-between;
+}
+.days{
+    font-size: .8em;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(28, 10%, 53%);
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.total p{
+    color: hsl(28, 10%, 53%);
+    font-size: 0.8rem;
+}
+.in_de{
+    text-align: right;
+}
+
+#in_de{
+    font-weight: 700;
+    color: hsl(25, 47%, 15%);
+}
+#total_exp{
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: hsl(25, 47%, 15%);
+}
+
+hr{
+    margin: 20px 10px;
+    border: none;
+    height: 1px;
+    background-color: hsl(25, 47%, 15%);
+    opacity: 50%;
+}
+
+@media screen and (max-width: 800px){
+    .container{
+        width: 40%;
+    }
+    .balance_text p{
+        font-size: 12px;
+    }
+    .balance_text h2{
+        font-size: 1.2rem;
+    }
+    .balance img{
+        height: 30px;
+    }
+    .days{
+        font-size: 10px;
+    }
+    .bar{
+        border-radius: 3px;
+    }
+    hr{
+        margin: 10px 5px;
+    }
+    .total p{
+        font-size: 10px;
+    }
+    
+    #total_exp{
+        font-size: 1.2rem;
+    }
+    .expenses h2{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        width: 80%;
+    }
+    .total p{
+        font-size: 15px;
+    }
+    
+    #total_exp{
+        font-size: 1.8rem;
+    }
+    .expenses h2{
+        font-size: 1.3rem;
+    }
+    #in_de{
+        font-size: 25px;
+    }
+    .balance_text p{
+        font-size: 15px;
+    }
+    .balance_text h2{
+        font-size: 1.6rem;
+    }
+    .balance img{
+        height: 50px;
+    }
+}
+@media screen and (max-width: 330px){
+    .total p{
+        font-size: 12px;
+    }
+    
+    #total_exp{
+        font-size: 1.5rem;
+    }
+    .expenses h2{
+        font-size: 1.3rem;
+    }
+    #in_de{
+        font-size: 20px;
+    }
+    .balance_text p{
+        font-size: 12px;
+    }
+    .balance_text h2{
+        font-size: 1.3rem;
+    }
+    .balance img{
+        height: 35px;
+    }
+    .days{
+        font-size: 12px;
+    }
+}
+
+

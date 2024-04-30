@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a {cursor: pointer;}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="balance">
+        <div class="balance_text">
+          <p>My balance</p>
+          <h2>$921.48</h2>
+        </div>
+        <img src="images/logo.svg" alt="logo">
+      </div>
+      <div class="expenses">
+        <h2>Spending - Last 7 days</h2>
+        <div class="chart">
+          <div class="bar"><span class="tooltip"></span></div>
+          <div class="bar"><span class="tooltip"></span></div>
+          <div class="bar"><span class="tooltip"></span></div>
+          <div class="bar"><span class="tooltip"></span></div>
+          <div class="bar"><span class="tooltip"></span></div>
+          <div class="bar"><span class="tooltip"></span></div>
+          <div class="bar"><span class="tooltip"></span></div>
+        </div>
+        <div class="days_container">
+          <span class="days">mon</span><span class="days">tue</span>
+          <span class="days">wed</span><span class="days">thu</span>
+          <span class="days">fri</span><span class="days">sat</span>
+          <span class="days">sun</span>
+        </div>
+        <hr>
+        <div class="total">
+          <div class="totexp">
+            <p>Total this month</p>
+            <h2 id="total_exp">$478.33</h2>
+          </div>
+          <div class="in_de">
+            <p id="in_de">+2.4%</p>
+            <p>from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a onclick="window.open('https://samirguragain-portfolio.netlify.app/')">Samir Guragain</a>.
+  </div>
+</body>
+</html>
